@@ -1,0 +1,85 @@
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(95, 95, 95);
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  border-radius: 1rem;
+  color: #fff;
+}
+/* 92, 165, 96 */
+.container__header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: .5rem;
+}
+
+.container__form__input,
+.container__form__button {
+  width: 100%;
+  padding: .5rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+.container__form__input::placeholder {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  .container__form__button:hover {
+    background-color: lightgray;
+  }
+}
+
+.container__form__button:active {
+  background-color: rgb(187, 187, 187);
+  color: white;
+}
+
+.important {
+  color: red;
+}
+
+.done {
+  text-decoration:line-through;
+}
+
+.todos__li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.container__todos .todos__ul:first-child {
+  border-bottom: none;
+}
+
+.container__todos .todos__ul:last-child {
+  border-bottom: none;
+}
+
+.delete-todo {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: rgb(191, 85, 85);
+  color: #fff;
+}
+
+.delete-todo:active {
+  background-color: red;
+}
