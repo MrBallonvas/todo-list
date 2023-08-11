@@ -9,7 +9,7 @@ function displayTodos () {
     todosUl.innerHTML += `
       <li class='todos__li' id='${item.id}'>
         <span class'wrapper'>
-          <input type='checkbox' id='todo_${item.id}' ${item.checked ? 'checked' : ''} />
+          <input name='item_${item.id}' type='checkbox' id='item_${item.id}' ${item.checked ? 'checked' : ''} />
           <label for='item_${item.id}' class='${item.checked ? 'done' : ''} ${item.important ? 'important' : ''}'>${item.todo}</label>
         </span>
         <button onclick='deleteTodo(this)' class='delete-todo' id='${item.id}'>X</button>
